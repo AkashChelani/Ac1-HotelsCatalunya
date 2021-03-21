@@ -4,9 +4,9 @@ use db_hotels;
 #Crearem la taula de Clients
 CREATE TABLE clients(
   client_id	                           INT(10) UNSIGNED AUTO_INCREMENT NOT NULL  ,
-  nom                                      VARCHAR(30) DEFAULT NULL,
+  nom                                        VARCHAR(30) DEFAULT NULL,
   cognom1                                  VARCHAR(30) DEFAULT NULL,
-  sexe                                     ENUM('M','F') DEFAULT  NULL,
+  sexe                                       ENUM('M','F') DEFAULT  NULL,
   data_naixement                           DATE DEFAULT NULL,
   pais_origen_id 						               TINYINT(4) UNSIGNED DEFAULT NULL ,
   
