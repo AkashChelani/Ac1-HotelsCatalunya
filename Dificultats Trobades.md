@@ -23,8 +23,8 @@
   - Hem tingut dificultats per fer el bucle per inserir aleatòriament els clients a les reserves
   
 
-\
-\
+
+
 
 
 ## PART A.2
