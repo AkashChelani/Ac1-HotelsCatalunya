@@ -39,11 +39,11 @@
  
   
   ### SELECTS_ Activitat Ac1 - Part A.2.sql
-  - Hem tingut dificultats amb la Pregunta 1. Perque no conseguiam fer be la select com ho demanava l'enunciat, amb les reserves que tenen menys nits.
-  - Hem tingut dificultats amb la Pregunta 5. Perque no conseguiam fer be la select amb les reserves que tenen mes nits.
-  - Hem tingut bastants dificultats amb la Pregunta 11. Perque no sabiem be com fer la recursivitat.
-  - Hem tingut bastants dificultats amb la Pregunta 12. Perque no ens ensortiam be amb la select
-  - Hem tingut dificultats tambe amb la Pregunta 13. Perque no sabiem be com fer-ho i vam estar una estona
+  - Hem tingut dificultats amb la **Pregunta 1**. Perque no conseguiam fer be la select com ho demanava l'enunciat, amb les reserves que tenen menys nits.
+  - Hem tingut dificultats amb la **Pregunta 5**. Perque no conseguiam fer be la select amb les reserves que tenen mes nits.
+  - Hem tingut bastants dificultats amb la **Pregunta 11**. Perque no sabiem be com fer la recursivitat.
+  - Hem tingut bastants dificultats amb la **Pregunta 12**. Perque no ens ensortiam be amb la select
+  - Hem tingut dificultats tambe amb la **Pregunta 13**. Perque no sabiem be com fer-ho i vam estar una estona
   
 
 
