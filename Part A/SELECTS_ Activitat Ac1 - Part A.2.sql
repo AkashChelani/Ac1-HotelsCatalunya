@@ -1,16 +1,16 @@
-#EXERCICI 1	
-/*Digues alguna de les reserves que tenen menys nits(més curta). Mostra només la reserva_id i el número de nits.
-Mostra el camp reserva_id i el número de nits.Ordena el resultat per el camp reserva_id de forma ascendent.
+#PREGUNTA 1	
+/*Digues alguna de les reserves que tenen menys nits(mÃ©s curta). Mostra nomÃ©s la reserva_id i el nÃºmero de nits.
+Mostra el camp reserva_id i el nÃºmero de nits.Ordena el resultat per el camp reserva_id de forma ascendent.
 */
 SELECT reserva_id, MIN(DATEDIFF(data_fi,data_inici)) AS nits
 	FROM reserves
 GROUP BY reserva_id
 ORDER BY reserva_id ASC;
 
-#EXERCICI 2
+#PREGUNTA 2
 
 /*
-Quants mesos té la reserva més curta de la BD?
+Quants mesos tÃ© la reserva mÃ©s curta de la BD?
 Expressa el resultat en mesos i arrodonint el resultat a 0 decimals.
 */
 
@@ -20,9 +20,9 @@ SELECT ROUND(MIN(TIMESTAMPDIFF(MONTH, data_inici,data_fi)),0) AS mesos
 
 
 
-#EXERCICI 3
+#PREGUNTA 3
 /*
-Ordena el nom dels hotels per longitud del seu nom (de més llarg a menys) i per nom lexicogràficament ascendentment(A,B,C)
+Ordena el nom dels hotels per longitud del seu nom (de mÃ©s llarg a menys) i per nom lexicogrÃ ficament ascendentment(A,B,C)
 */
 SELECT nom
 FROM hotels
@@ -30,7 +30,7 @@ GROUP BY hotel_id
 ORDER BY MAX(LENGTH(nom)) DESC, nom ASC;
    
    
-#EXERCICI 4
+#PREGUNTA 4
 /*
 Mostra els clients que els hi coincideix el dia de naixement amb el mes.
 Mostra el nom,el primer cognom i la data de naixement.
@@ -42,10 +42,10 @@ WHERE DAY(c.data_naix) = MONTH(c.data_naix)
 ORDER BY c.client_id;
 
                     
-#EXERCICI 5
+#PREGUNTA 5
 /*
-Digues alguna de les reserves que tenen més nits. Mostra només la reserva_id i el número de nits.
-Mostra el camp reserva_id i el número de nits.Ordena el resultat per el camo reserva_id de forma ascendent.
+Digues alguna de les reserves que tenen mÃ©s nits. Mostra nomÃ©s la reserva_id i el nÃºmero de nits.
+Mostra el camp reserva_id i el nÃºmero de nits.Ordena el resultat per el camo reserva_id de forma ascendent.
 */
 SELECT reserva_id, MAX(DATEDIFF(data_fi,data_inici)) AS nits
 	FROM reserves
@@ -53,12 +53,12 @@ GROUP BY reserva_id;
 
 
 
-#EXERCICI 6
+#PREGUNTA 6
 /*
 Mostra quants carrers diferents tenim entrats a la BD.
-Només contempla les adreces que tenen el caràcter ',' per separar el nom del carrer i el número.
-No contemplis noms de carrers amb diferents idiomes. Si un carrer està en català i en castellà seran dos carrers diferents.
-Ordena el resultat per adreça.
+NomÃ©s contempla les adreces que tenen el carÃ cter ',' per separar el nom del carrer i el nÃºmero.
+No contemplis noms de carrers amb diferents idiomes. Si un carrer estÃ  en catalÃ  i en castellÃ  seran dos carrers diferents.
+Ordena el resultat per adreÃ§a.
 */
 	
 SELECT COUNT(DISTINCT TRIM(SUBSTR(h.adreca,1,INSTR(h.adreca,',')-1))) AS quantitat
@@ -71,7 +71,7 @@ WHERE NOT TRIM(SUBSTR(h.adreca,1,INSTR(h.adreca,',')-1)) IS NULL
 
 #PREGUNTA 7
 /*
-Mostra els hotels que tenen el mateix número d'habitacions que l'hotel "987 Barcelona" de Barcelona
+Mostra els hotels que tenen el mateix nÃºmero d'habitacions que l'hotel "987 Barcelona" de Barcelona
 
     Mostra el nom dels hotels amb les seves poblacions
     Els hotels coincidents no cal que siguin de Barcelona
@@ -133,9 +133,9 @@ ORDER BY r.client_id;
 #PREGUNTA 10
 
 /*
-Mostra el rànquing dels 5 primers països amb més reserves durant l’any 2016.
+Mostra el rÃ nquing dels 5 primers paÃ¯sos amb mÃ©s reserves durant lâ€™any 2016.
 
-Mostra per cada país el seu nom i el número de reserves
+Mostra per cada paÃ­s el seu nom i el nÃºmero de reserves
 Una reserva pertany a l'any si la seva data d'inici hi pertany.
 */
 
@@ -153,7 +153,7 @@ ORDER BY num_reserves DESC LIMIT 5;
 /*
 RECURSIVITAT
 
-MOSTRA EL NÚMERO DE NITS QUE HI HA CADA MES ENTRE DUES DATES.
+MOSTRA EL NÃšMERO DE NITS QUE HI HA CADA MES ENTRE DUES DATES.
 DATA_INICI=2016-01-31 DATA_FI=2016-12-31
 
 */
