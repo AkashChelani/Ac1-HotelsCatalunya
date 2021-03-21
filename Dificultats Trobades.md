@@ -1,10 +1,10 @@
-# DIFICULTATS TROBADES
-  
-## PART A.1
+# DIFICULTATS TROBADES 
+
+## PART A.1 
 
 
   
-*En la Part A.1 hem tingut les següents dificultats:*
+ *En la Part A.1 hem tingut les següents dificultats:*
   
 
   
@@ -21,5 +21,6 @@
   - Hem tingut dificultats per recorrer i llegir totes les files del CSV
   - Hem tingut bastants dificultats per transformar la data dd/mm/yyyy a yyyy-mm-dd
   - Hem tingut dificultats per fer el bucle per inserir aleatòriament els clients a les reserves
-  
 
+
+  
