@@ -3,7 +3,7 @@ use db_hotels;
 
 #Crearem la taula de Clients
 CREATE TABLE clients(
-  client_id	                             INT(10) UNSIGNED AUTO_INCREMENT NOT NULL  ,
+  client_id	                           INT(10) UNSIGNED AUTO_INCREMENT NOT NULL  ,
   nom                                      VARCHAR(30) DEFAULT NULL,
   cognom1                                  VARCHAR(30) DEFAULT NULL,
   sexe                                     ENUM('M','F') DEFAULT  NULL,
